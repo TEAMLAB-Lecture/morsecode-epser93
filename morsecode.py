@@ -135,6 +135,8 @@ def is_validated_morse_code(user_input):
             if word_element not in morse_code_set:
                 result = False
                 break
+        if word == "":
+            continue
         if word not in morse_code:
             result = False
             break
